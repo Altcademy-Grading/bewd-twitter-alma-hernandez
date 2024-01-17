@@ -3,7 +3,7 @@ class CreateSessions < ActiveRecord::Migration[6.1]
     create_table :sessions do |t|
 
       t.string :token
-      t.integer :user_id, foreign_key
+      t.integer :user_id, foreign_key: true
 
       t.timestamps
     end
